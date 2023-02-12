@@ -30,6 +30,7 @@ const reviews = [
   },
 ];
 
+// 일반적으로 객체에 -를 쓰지 않지만 이렇게 선언 가능하긴 하다.
 const btnActions = {
   'next-btn': () => {
     currentItem++;
@@ -73,6 +74,7 @@ function showPerson(person) {
   info.textContent = item.text;
 }
 
+// 여기도 객체 리터럴 연습
 btn.forEach((btn) => {
   btn.addEventListener('click', function (event) {
     const action = event.currentTarget.classList[1];

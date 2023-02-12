@@ -10,6 +10,7 @@ btn.addEventListener('click', function() {
   //   hexColor += hex[getRandomNumber()];
   // }
 
+  // while 연습
   while (hexColor.length < 7) {
     hexColor += hex[random()]
   }

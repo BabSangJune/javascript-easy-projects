@@ -27,9 +27,10 @@ const setTextColor = () => {
   }
 };
 
+// 객체 리터럴 연습해보기
 btns.forEach(function (btn) {
-  btn.addEventListener('click', function (e) {
-    const btnAction = e.currentTarget.classList[1];
+  btn.addEventListener('click', function (event) {
+    const btnAction = event.currentTarget.classList[1];
     btnClass[btnAction]();
 
     value.style.color = setTextColor();
